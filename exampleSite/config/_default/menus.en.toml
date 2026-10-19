@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Resume"
-  url = "/Murad_Baghirli_Resume.pdf"
+  url = "/murad_baghirli_resume.pdf"
   weight = 60
   [main.params]
     target = "_blank"
