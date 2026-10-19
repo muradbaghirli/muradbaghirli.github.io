@@ -1,6 +1,6 @@
 ---
 title: "Murad Baghirli"
-description: "ML Engineer specializing in NLP, semantic retrieval, and Transformer optimization. Incoming MSc at TUM."
+description: "ML Engineer working on search, retrieval, and language model training. MSE in Computer Science at Johns Hopkins."
 ---
 
-Based in Heilbronn, Germany. Building retrieval and ranking systems at Azerbaijan's National AI Center. Starting my MSc at TUM Heilbronn — looking for werkstudent roles in NLP, search, or ML infrastructure.
+Based in Baltimore, MD. MSE in Computer Science at Johns Hopkins and Graduate Course Assistant for Artificial Intelligence. Previously built E-QANUN.AI, Azerbaijan's national legal search platform, at the National AI Center.

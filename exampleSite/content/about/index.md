@@ -9,26 +9,24 @@ showTableOfContents: true
 showBreadcrumbs: false
 ---
 
-I'm an ML Engineer with three years of production NLP experience, joining TUM's MSc in Information Engineering in 2025.
+I'm an ML Engineer and an MSE student in Computer Science at Johns Hopkins University, where I'm also a Graduate Course Assistant for Artificial Intelligence (EN.601.464).
 
-My work centers on two problems: making search relevant and making models fast. At NAIC (National AI Center) I built a hybrid retrieval pipeline — BM25 for exact-match recall and SBERT/DPR for semantic coverage — over a 500k-document domain corpus. Evaluated against MRR@10, NDCG@5, and precision-recall curves; user testing put accuracy at 85%.
+Before Hopkins, I spent nearly three years at Azerbaijan's National Artificial Intelligence Center (AZBA). There I built [E-QANUN.AI](https://www.e-qanun.ai/), the national legal search platform: 50M+ vectors across Elasticsearch and Vespa, serving 7K+ monthly active users and 50K+ queries per month. I worked across the whole stack, from training retrievers and re-rankers to designing the RAG pipeline and fine-tuning LLMs on H200 clusters.
 
-On the efficiency side: I exported DistilBERT and SBERT to ONNX, combined dynamic quantization with mixed-precision training, and reduced model size by **39%** with under 1% accuracy loss. The same pipeline handles query-time NER and query classification.
+I also pretrained **AzNeoBERT**, the first modern Azerbaijani-only encoder model, on a 12.2B-token corpus.
 
-I track numbers. If I can't measure it, I don't claim it improved.
-
-Connect on [LinkedIn](https://linkedin.com/in/muradbaghirli/).
+Connect on [LinkedIn](https://www.linkedin.com/in/muradbaghirli/).
 
 ---
 
 ## What I Build
 
-- Hybrid retrieval pipelines combining BM25 with SBERT/DPR dense vectors — evaluated against MRR@10 and NDCG@5 across 500k+ document corpora.
-- Re-ranking stages using cross-encoder LLMs and lightweight re-ranking models, trading precision against P95 latency at each stage.
-- Transformer models (DistilBERT, SBERT) exported to ONNX with dynamic INT8 quantization — 39% size reduction, under 1% accuracy loss.
-- Mixed-precision training (torch.cuda.amp) to cut fine-tuning wall-clock time ~1.8× without benchmark regression.
-- Query understanding with quantized DistilBERT — NER and classification in a single inference pass — deployed on AWS.
-- Evaluation frameworks (MRR@10, NDCG@5, precision-recall) defined before building models, so every optimization is grounded in measurable outcomes.
+- Hybrid search combining SBERT-LaBSE embeddings with lexical methods (BM25, fuzzy matching, n-gram indexing), with fusion weights tuned via Optuna: **+24% precision**.
+- Multistage RAG pipelines: query normalization → spell correction → intent detection → hybrid retrieval → mGTE re-ranking → generation, at **250ms** query-to-retrieval latency.
+- Dense retrievers (SBERT, DPR, mGTE) trained with hard negatives, MNRL, and LambdaLoss, reaching **nDCG@10 of 0.878** and **MRR@10 of 0.810**.
+- LLM fine-tuning with LoRA, including Qwen3.6-35B-A3B (MoE) for Azerbaijani document summarization on 6×H200.
+- Encoder pretraining at scale with DeepSpeed ZeRO-2, Accelerate, and SLURM on 8×H200, reaching **1.24M tokens/sec**.
+- Low-latency inference: Triton Inference Server deployments with up to **25× speedups**, and services sustaining 500 RPS at 180ms p95.
 
 ---
 
@@ -36,21 +34,19 @@ Connect on [LinkedIn](https://linkedin.com/in/muradbaghirli/).
 
 | Area | Tools |
 |---|---|
-| ML / DL | Python · PyTorch · Hugging Face Transformers |
-| Optimization | ONNX · Dynamic Quantization · Mixed Precision |
-| Retrieval | BM25 · SBERT · DPR · Cross-Encoders |
-| Vector DBs | Elasticsearch · FAISS · Qdrant |
-| Infrastructure | FastAPI · Docker · AWS |
-| Evaluation | MRR · NDCG · Precision-Recall |
+| Languages | Python · C · C++ · Java · SQL |
+| ML / AI | PyTorch · scikit-learn · Transformers · LLMs & VLMs · RAG · Fine-tuning · Pre-training · Recommender Systems |
+| Training | LoRA/QLoRA · PEFT · Axolotl · Unsloth · DeepSpeed · HuggingFace Accelerate · FlashAttention · Optuna |
+| Inference & Optimization | vLLM · NVIDIA Triton Inference Server · HuggingFace TEI · ONNX · Quantization |
+| Search / IR | Vespa · Elasticsearch · HNSW · BM25 · Learning-to-Rank · Hybrid Search |
+| MLOps & Infra | MLflow · Weights & Biases · Docker · Git · FastAPI · SLURM · PostgreSQL · MongoDB |
 
 ---
 
 ## Education
 
-**M.Sc. in Information Engineering** — Technical University of Munich (TUM)
-*2026 – Expected 2028*
-Incoming graduate student. Focus: machine learning systems, information retrieval, efficient deep learning.
+**M.S.E. in Computer Science**: The Johns Hopkins University, Baltimore, MD
+*Aug 2025 – May 2027* · GPA: 3.76/4.00
 
-**B.Sc. in Computer Science** — UFAZ – French-Azerbaijani University (University of Strasbourg)
-*2021 – 2025*
-Core coursework: Linear Algebra, Statistics, Calculus, Algorithms & Data Structures, Artificial Intelligence, Software Engineering.
+**B.Sc. in Computer Science**: French-Azerbaijani University (UFAZ), Baku, Azerbaijan
+*Sep 2021 – Jul 2025* · GPA: 3.92/4.00
