@@ -10,3 +10,22 @@
   object-fit: contain !important;
   padding: 1.5rem;
 }
+
+/* ── Inline links in page text ─────────────────────────────────────────── */
+/* The slate scheme colors links gray, nearly indistinguishable from body
+   text in light mode. Scoped to p/li/td so card-style links (contact page)
+   and the table-of-contents sidebar keep their own styling. */
+.prose :is(p, li, td) a:not(#TableOfContents a) {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.4);
+  text-underline-offset: 3px;
+}
+.prose :is(p, li, td) a:not(#TableOfContents a):hover {
+  text-decoration-color: currentColor;
+}
+.dark .prose :is(p, li, td) a:not(#TableOfContents a) {
+  color: #60a5fa;
+  text-decoration-color: rgba(96, 165, 250, 0.4);
+}

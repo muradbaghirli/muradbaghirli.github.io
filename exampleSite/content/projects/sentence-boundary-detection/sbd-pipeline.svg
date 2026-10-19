@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Segoe UI, Roboto, -apple-system, sans-serif">
+<rect width="1200" height="500" rx="16" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker></defs>
+<text x="40" y="52" font-size="15" font-weight="700" letter-spacing="1.5" fill="#64748b">SERVING PIPELINE</text>
+<rect x="40" y="80" width="160" height="130" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.8"/>
+<text x="120.0" y="114" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Raw text</text>
+<text x="120.0" y="142" text-anchor="middle" font-size="13" fill="#64748b">POST /segment</text>
+<rect x="232" y="80" width="160" height="130" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.8"/>
+<text x="312.0" y="114" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Candidates</text>
+<text x="312.0" y="142" text-anchor="middle" font-size="13" fill="#64748b">scan for . ! ? ; :</text>
+<text x="312.0" y="162" text-anchor="middle" font-size="13" fill="#64748b">quotes, newlines</text>
+<line x1="202" y1="145.0" x2="229" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="424" y="80" width="160" height="130" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.8"/>
+<text x="504.0" y="114" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Features</text>
+<text x="504.0" y="142" text-anchor="middle" font-size="13" fill="#64748b">N × 28 matrix</text>
+<text x="504.0" y="162" text-anchor="middle" font-size="13" fill="#64748b">window + flags</text>
+<line x1="394" y1="145.0" x2="421" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="616" y="80" width="160" height="130" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.8"/>
+<text x="696.0" y="114" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Triton FIL</text>
+<text x="696.0" y="142" text-anchor="middle" font-size="13" fill="#64748b">Treelite forest</text>
+<text x="696.0" y="162" text-anchor="middle" font-size="13" fill="#64748b">dynamic batching</text>
+<text x="696.0" y="182" text-anchor="middle" font-size="13" fill="#64748b">≤1024 rows · 5ms</text>
+<line x1="586" y1="145.0" x2="613" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="808" y="80" width="160" height="130" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.8"/>
+<text x="888.0" y="114" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Split</text>
+<text x="888.0" y="142" text-anchor="middle" font-size="13" fill="#64748b">boundary if</text>
+<text x="888.0" y="162" text-anchor="middle" font-size="13" fill="#64748b">p(boundary) &gt; 0.5</text>
+<line x1="778" y1="145.0" x2="805" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="1000" y="80" width="160" height="130" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.8"/>
+<text x="1080.0" y="114" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Sentences</text>
+<text x="1080.0" y="142" text-anchor="middle" font-size="13" fill="#64748b">JSON list</text>
+<line x1="970" y1="145.0" x2="997" y2="145.0" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+<text x="600.0" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">gRPC</text>
+<text x="792.0" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">[p₀, p₁]</text>
+<rect x="40" y="236" width="18" height="18" rx="4" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+<text x="66" y="250" font-size="14" fill="#0f172a">FastAPI container</text>
+<rect x="260" y="236" width="18" height="18" rx="4" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+<text x="286" y="250" font-size="14" fill="#0f172a">Triton Inference Server container</text>
+<text x="1160" y="250" text-anchor="end" font-size="14" fill="#64748b">orchestrated with Docker Compose · /health and /ready probes</text>
+<text x="40" y="330" font-size="15" font-weight="700" letter-spacing="1.5" fill="#64748b">INFERENCE LATENCY</text>
+<text x="170" y="381" text-anchor="end" font-size="15" font-weight="600" fill="#0f172a">Before</text>
+<rect x="190" y="355" width="880.0" height="38" rx="6" fill="#cbd5e1"/>
+<text x="1082.0" y="381" font-size="16" font-weight="700" fill="#0f172a">76 ms</text>
+<text x="170" y="437" text-anchor="end" font-size="15" font-weight="600" fill="#0f172a">Triton FIL</text>
+<rect x="190" y="411" width="34.7" height="38" rx="6" fill="#10b981"/>
+<text x="236.7" y="437" font-size="16" font-weight="700" fill="#0f172a">3 ms</text>
+<text x="330" y="437" font-size="22" font-weight="700" fill="#10b981">25× faster</text>
+</svg>

@@ -16,7 +16,7 @@
   </style>
 
   <!-- Small top label -->
-  <text x="600" y="105" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" class="top-label">AZERBAIJANI NLP · TEXT SEGMENTATION</text>
+  <text x="600" y="105" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" class="top-label">AZERBAIJANI LEGAL NLP · TEXT SEGMENTATION</text>
 
   <!-- Main title -->
   <text x="600" y="185" text-anchor="middle" font-size="58" font-weight="700" class="title">Sentence Boundary Detector</text>

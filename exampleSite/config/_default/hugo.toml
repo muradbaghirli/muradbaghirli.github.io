@@ -24,3 +24,8 @@ mainSections = ["projects"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML"]
   term = ["HTML", "RSS"]
+
+# Crop images around their center (Hugo's default "Smart" anchor drifts toward
+# busy background areas, which pushed the profile photo off-center)
+[imaging]
+  anchor = "Center"
