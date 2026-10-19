@@ -53,7 +53,7 @@ jobs:
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
-        # Outputs: base_url (e.g. https://ibishovrauf.github.io or https://yourdomain.com)
+        # Outputs: base_url (e.g. https://muradbaghirli.github.io or https://yourdomain.com)
         # For custom domains this equals your CNAME value.
         # For project pages (non-root) it appends the repo name — handled automatically.
 
