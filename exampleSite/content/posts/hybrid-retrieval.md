@@ -104,7 +104,7 @@ Final hybrid system reached **85% accuracy** in user acceptance testing vs. ~62%
 
 ---
 
-*Code for this pipeline is on [GitHub](https://github.com/ibishovrauf). Questions? [Email me](mailto:info@raufibishov.com).*
+*Code for this pipeline is on [GitHub](https://github.com/muradbaghirli). Questions? [Email me](mailto:info@raufibishov.com).*
 
 ---
 

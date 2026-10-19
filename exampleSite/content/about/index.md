@@ -17,7 +17,7 @@ On the efficiency side: I exported DistilBERT and SBERT to ONNX, combined dynami
 
 I track numbers. If I can't measure it, I don't claim it improved.
 
-Connect on [LinkedIn](https://linkedin.com/in/rauf-ibishov/).
+Connect on [LinkedIn](https://linkedin.com/in/muradbaghirli/).
 
 ---
 
