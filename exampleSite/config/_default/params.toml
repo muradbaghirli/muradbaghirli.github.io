@@ -8,7 +8,7 @@ enableCodeCopy = true
 # ─── Homepage ──────────────────────────────────────────────────────────────────
 [homepage]
   layout = "profile"
-  homepageImage = "img/avatar.JPG"
+  homepageImage = "img/avatar.png"
   showRecent = true
   showRecentItems = 3
   showMoreLink = true

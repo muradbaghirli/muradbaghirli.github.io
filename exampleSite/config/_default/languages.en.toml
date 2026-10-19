@@ -9,7 +9,7 @@ title = "Murad Baghirli"
 
   [params.author]
     name = "Murad Baghirli"
-    image = "img/avatar.JPG"
+    image = "img/avatar.png"
     headline = "ML Engineer · 3 yrs building search systems · MSc @ TUM"
     bio = "Based in Heilbronn, Germany. Building retrieval and ranking systems at Azerbaijan's National AI Center. Starting my MSc at TUM Heilbronn — looking for werkstudent roles in NLP, search, or ML infrastructure."
     links = [
