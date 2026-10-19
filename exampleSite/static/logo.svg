@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 120 120">
   <polygon points="60,6 103,29 103,83 60,106 17,83 17,29" fill="#0C447C" opacity=".15"/>
   <polygon points="60,14 94,33 94,79 60,98 26,79 26,33" fill="#0C447C"/>
-  <text x="60" y="59" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif" font-size="30" font-weight="600" fill="#E6F1FB" text-anchor="middle" dominant-baseline="central" letter-spacing="-1">RI</text>
+  <text x="60" y="59" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif" font-size="30" font-weight="600" fill="#E6F1FB" text-anchor="middle" dominant-baseline="central" letter-spacing="-1">MB</text>
 </svg>
