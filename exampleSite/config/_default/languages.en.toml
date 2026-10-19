@@ -1,14 +1,14 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Rauf Ibishov"
+title = "Murad Baghirli"
 
 [params]
   description = "ML Engineer specializing in NLP, semantic retrieval, and Transformer optimization. Incoming MSc at TUM."
   logo = "logo.svg"
 
   [params.author]
-    name = "Rauf Ibishov"
+    name = "Murad Baghirli"
     image = "img/avatar.png"
     headline = "ML Engineer · 3 yrs building search systems · MSc @ TUM"
     bio = "Based in Heilbronn, Germany. Building retrieval and ranking systems at Azerbaijan's National AI Center. Starting my MSc at TUM Heilbronn — looking for werkstudent roles in NLP, search, or ML infrastructure."
